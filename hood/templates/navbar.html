@@ -16,11 +16,11 @@
                 </li>
                 {% else %}
                 <li class="nav-item active">
-                    <a class="nav-link" href="{% url 'login' %}">Log In</a>
+                    <a class="nav-link btn btn-sm btn-danger d-block mx-auto" href="{% url 'login' %}">Log In</a>
                 </li>
 
                 <li class="nav-item active">
-                    <a class="nav-link" href="{% url 'signup' %}">Sign Up</a>
+                    <a class="nav-link btn btn-sm btn-success d-block mx-auto" href="{% url 'signup' %}">Sign Up</a>
                 </li>
                 {% endif %}
             </ul>
