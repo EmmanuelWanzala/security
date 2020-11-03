@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 import os
 from pathlib import Path
+import django_heroku
 import dj-database-url
 from decouple import config,Csv
 
@@ -159,3 +160,7 @@ MEDIA_URL = '/media/'
 LOGIN_REDIRECT_URL = 'index'
 
 LOGOUT_REDIRECT_URL = 'index'
+
+# Configure Django App for Heroku.
+django_heroku.settings(locals())
+
