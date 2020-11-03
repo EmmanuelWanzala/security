@@ -1,1 +1,1 @@
-web: gunicorn settings.wsgi --log-file -
+web: gunicorn hoodwatch.wsgi --log-file -
